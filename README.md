@@ -1,27 +1,35 @@
-# RAG News Chatbot Frontend
+# 📰 RAG Chatbot – Frontend  
+<img width="1274" height="610" alt="image" src="https://github.com/user-attachments/assets/68b5a640-7e18-454b-bb46-137f27b6a7c6" />
 
-This is the React frontend for the RAG-powered News Chatbot.
+## 🚀 Tech Stack  
+- **React.js** – UI framework  
+- **Vite** – bundler + dev server  
+- **TailwindCSS / SCSS** – styling  
+- **Axios** – API requests  
+- **Socket.IO Client** – real-time streaming responses  
 
-## Features
-- Chat UI with message history
-- Input box for new messages
-- Streaming/typed bot replies
-- Session reset button
+---
 
-## Setup
-1. Copy `.env.example` to `.env` and adjust if needed.
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+## 📂 Repository  
+- **Frontend repo**: [RAG-Chatbot-frontend](https://github.com/Lovey007/RAG-Chatbot-frontend)  
+- **Backend repo**: [RAG-Chatbot-backend](https://github.com/Lovey007/RAG-Chatbot-backend)  
 
-## Configuration
-- `VITE_API_URL`: The backend API URL (default: `http://localhost:5000`).
+---
 
-## Usage
-- Open the app in your browser (usually at `http://localhost:5173`).
-- Start chatting with the bot!
+## 🔎 Code Walkthrough (Frontend)  
+1. **Chat UI**  
+   - Built with React components styled via SCSS + Tailwind utilities.  
+   - User messages (🧑) and Bot responses (🤖) styled with distinct bubbles and timestamps.  
+
+2. **API Calls**  
+   - Uses `axios` to send user queries to the backend (`/chat` endpoint).  
+   - Uses `Socket.IO` for streaming responses (typing effect).  
+
+3. **Session Handling**  
+   - Maintains `sessionId` in frontend state to persist conversation across multiple turns.  
+   - Reset button clears both local state and backend Redis session history.  
+
+4. **Design Decisions & Improvements**  
+   - **Minimalist UI** for readability; theme can be extended (dark mode, multi-layouts).  
+   - **Message virtualization** could be added for very long chats.  
+   - **SSR/Next.js** could replace Vite for SEO-friendly deployment.  
