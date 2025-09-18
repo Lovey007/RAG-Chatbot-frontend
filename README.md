@@ -1,4 +1,5 @@
 # 📰 RAG Chatbot – Frontend
+<img width="1277" height="612" alt="image" src="https://github.com/user-attachments/assets/f0225c18-d224-4402-9c64-b12b74ca0796" />
 
 A modern frontend for a Retrieval-Augmented Generation (RAG) News Chatbot, enabling conversational AI with persistent session history and fast responses.
 
@@ -37,7 +38,7 @@ Both repositories are public and contain complete codebases and clear README.md 
 - **UI Update:** User messages are optimistically rendered in the chat. Once a response is received, it is appended to the chat with a typing animation.
 - **Session Persistence:** Chat history and session state are maintained until reset, supporting multi-turn conversations.
 
-**Typical Flow:**
+**Flow:**
 1. User types message and submits.
 2. Message is added to local chat state and POSTed to backend.
 3. While waiting, a loading/typing indicator is shown.
