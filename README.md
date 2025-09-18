@@ -1,5 +1,5 @@
 # 📰 RAG Chatbot – Frontend  
-<img width="1274" height="610" alt="image" src="https://github.com/user-attachments/assets/68b5a640-7e18-454b-bb46-137f27b6a7c6" />
+<img width="382" height="183" alt="image" src="https://github.com/user-attachments/assets/68b5a640-7e18-454b-bb46-137f27b6a7c6" />
 
 ## 🚀 Tech Stack  
 - **React.js** – UI framework  
