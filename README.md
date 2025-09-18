@@ -4,9 +4,8 @@
 ## 🚀 Tech Stack  
 - **React.js** – UI framework  
 - **Vite** – bundler + dev server  
-- **TailwindCSS / SCSS** – styling  
-- **Axios** – API requests  
-- **Socket.IO Client** – real-time streaming responses  
+- **SCSS** – styling  
+- **Axios** – API requests
 
 ---
 
@@ -18,12 +17,11 @@
 
 ## 🔎 Code Walkthrough (Frontend)  
 1. **Chat UI**  
-   - Built with React components styled via SCSS + Tailwind utilities.  
+   - Built with React components styled via SCSS.  
    - User messages (🧑) and Bot responses (🤖) styled with distinct bubbles and timestamps.  
 
 2. **API Calls**  
    - Uses `axios` to send user queries to the backend (`/chat` endpoint).  
-   - Uses `Socket.IO` for streaming responses (typing effect).  
 
 3. **Session Handling**  
    - Maintains `sessionId` in frontend state to persist conversation across multiple turns.  
@@ -31,5 +29,4 @@
 
 4. **Design Decisions & Improvements**  
    - **Minimalist UI** for readability; theme can be extended (dark mode, multi-layouts).  
-   - **Message virtualization** could be added for very long chats.  
-   - **SSR/Next.js** could replace Vite for SEO-friendly deployment.  
+   - **Message virtualization** could be added for very long chats. 
